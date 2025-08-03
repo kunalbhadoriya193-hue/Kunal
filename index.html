@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Receipt Generator</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="receipt-details">
+          <h1 class="title">Receipt-Generator</h1>
+
+          <div class="form">
+               <input type="text" id = itemName placeholder="item name"/>
+               <input type="number" id="itemPrice" placeholder="Price(₹)"/>
+               <button onclick="addItem()">AddItem</button>
+          </div>
+
+          <div class="receipt" id="receipt">
+               <h2 class="storeName">Proxmity-Mart</h2>
+               <p class="date-time" id="date-time"></p>
+               <hr/>
+          
+
+          <div class="items" id="itemList"></div>
+          <hr/>
+
+          <div class="total" id="totalRow">
+          <span> Total </span><span id="totalAmount"> ₹ 0.00 </span>
+          </div>
+          <p class="thank-you">Thank You for Shopping Vist Again!</p>
+          </div>
+          <button class="print-btn" id="printBtn()" onclick="print()">Print Receipt</button>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
